@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2 class="logo">Dashboard</h2>
+        <ul>
+            <li class="active">🏠 Overview</li>
+            <li>📊 Analytics</li>
+            <li>🧾 Reports</li>
+            <li>⚙ Settings</li>
+            <li>🚪 Logout</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Welcome Back 👋</h1>
+            <input type="text" placeholder="Search…" />
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p class="value">12,450</p>
+            </div>
+
+            <div class="card">
+                <h3>Active Sessions</h3>
+                <p class="value">514</p>
+            </div>
+
+            <div class="card">
+                <h3>Revenue</h3>
+                <p class="value">$8,960</p>
+            </div>
+
+            <div class="card">
+                <h3>New Signups</h3>
+                <p class="value">149</p>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <h2>Monthly Overview</h2>
+            <canvas id="lineChart"></canvas>
+        </section>
+
+        <footer>
+            © 2025 Admin Dashboard | CI/CD powered
+        </footer>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
