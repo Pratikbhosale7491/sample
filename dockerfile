@@ -1,11 +1,11 @@
-# Use official Nginx image (fixed version)
+# Use official Nginx image
 FROM nginx:1.25-alpine
 
 # Remove default Nginx static files
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy your frontend files to Nginx directory
-COPY . /usr/share/nginx/html
+# Copy frontend files (from the /frontend folder)
+COPY frontend/ /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80
