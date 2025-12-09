@@ -7,7 +7,7 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy frontend files (from the /frontend folder)
 COPY frontend/ /usr/share/nginx/html/
 
-# Expose port 80
+## Expose port 80
 EXPOSE 80
 
 # Start Nginx
